@@ -33,7 +33,7 @@ extension AuthApi: TargetType {
   var task: Task {
     switch self {
     case .login(credentials: let credentials):
-      return Task.requestParameters(parameters: ["login": credentials.login, "password": credentials.password], encoding: URLEncoding.queryString)
+      return Task.requestParameters(parameters: ["login": credentials.username, "password": credentials.password], encoding: URLEncoding.queryString)
     case .register(user: let user):
       return Task.requestJSONEncodable(user)
     }

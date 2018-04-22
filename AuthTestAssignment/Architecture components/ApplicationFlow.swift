@@ -23,6 +23,9 @@ class ApplicationFlow {
     container.register(AuthProvider.self) { _ in
       AuthProvider(plugins: [])
     }
+    container.register(UserStorage.self) { _ in
+      InMemoryUserStorage()
+    }
     return container
   }()
   

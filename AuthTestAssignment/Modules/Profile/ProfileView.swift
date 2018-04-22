@@ -1,7 +1,7 @@
 import UIKit
 
 
-protocol ProfileView: AnyView {
+protocol ProfileView: class {
   
 }
 

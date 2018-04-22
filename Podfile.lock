@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.0)
+  - IQKeyboardManager (5.0.8)
   - Moya (11.0.1):
     - Moya/Core (= 11.0.1)
   - Moya/Core (11.0.1):
@@ -7,20 +8,19 @@ PODS:
     - Result (~> 3.0)
   - Result (3.2.4)
   - Swinject (2.3.0)
-  - Yalta (0.5.1)
 
 DEPENDENCIES:
+  - IQKeyboardManager
   - Moya
   - Swinject
-  - Yalta
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  IQKeyboardManager: 266cb7b1d11f94a3e71229d77f960f9a1b538e5b
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Swinject: 6e29897396bab81fe4aa40c5ca92ba996136334b
-  Yalta: e74adaf240f2e1b6e738ccad01fa4f3835d7a524
 
-PODFILE CHECKSUM: 3e821e81f13dda74f227f29cf035ac9eaa64dfef
+PODFILE CHECKSUM: fd95ac92c22476fe154a04fc4754ae15358af779
 
 COCOAPODS: 1.4.0

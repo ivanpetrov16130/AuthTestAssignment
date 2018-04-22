@@ -1,6 +1,5 @@
 import Swinject
 
-
 class LoginModule: Module {
   
   typealias RootView = UINavigationController
@@ -13,7 +12,7 @@ class LoginModule: Module {
   private(set) lazy var presentersContainer: Container = {
     let container = Container(parent: servicesContainer)
     container.register(LoginPresenting.self) { resolver in
-      LoginPresenter(owner: self, provider: resolver.resolve(AuthProvider.self)!)
+      LoginPresenter(owner: self, provider: resolver.resolve(AuthProvider.self)!, userStorage: resolver.resolve(UserStorage.self)!)
     }
     return container
   }()
@@ -23,7 +22,7 @@ class LoginModule: Module {
     container.register(LoginView.self) { resolver in
       LoginViewController(presenter: resolver.resolve(LoginPresenting.self)!)
       }.initCompleted({ (resolver, loginView) in
-        resolver.resolve(LoginPresenting.self)?.inject(view: loginView)
+        resolver.resolve(LoginPresenting.self)?.inject(loginView)
       })
     return container
   }()

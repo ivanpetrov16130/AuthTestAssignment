@@ -6,11 +6,7 @@ protocol AnyPresenting {
   func inject<View>(view: View)
 }
 
-protocol AnyView: class {
-  
-}
-
-class BasicPresenter<OwnerModule: Module> {
+class BasicPresenter<OwnerModule: Module>: NSObject {
 
   unowned let owner: OwnerModule
   

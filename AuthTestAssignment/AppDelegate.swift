@@ -1,4 +1,5 @@
 import UIKit
+import IQKeyboardManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -7,6 +8,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var flow: ApplicationFlow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    activateThirdparties()
+    
     let window = UIWindow(frame: UIScreen.main.bounds)
     flow = ApplicationFlow()
     flow?.setRootViewController(to: window)
@@ -15,5 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
 
+}
+
+extension AppDelegate {
+  
+  func activateThirdparties() {
+    IQKeyboardManager.shared().isEnabled = true
+  }
+  
 }
 

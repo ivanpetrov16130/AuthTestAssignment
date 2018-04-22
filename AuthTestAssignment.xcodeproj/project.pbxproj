@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		20CD3DE3A617B87A89F6F91B /* Pods_AuthTestAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD9AA130A380FE7202AFB2E /* Pods_AuthTestAssignmentTests.framework */; };
 		21164E5E5EBC7E04F159CD75 /* Pods_AuthTestAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9546301F4536612B15E4E57 /* Pods_AuthTestAssignment.framework */; };
+		2C53022C208CE9F800D9833F /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53022B208CE9F800D9833F /* UserStorage.swift */; };
 		2C7E6B97208C78B5007C67C2 /* LoginPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */; };
-		2C7E6B99208C79A3007C67C2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B98208C79A3007C67C2 /* LoginView.swift */; };
 		2C7E6BA0208C9497007C67C2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */; };
 		2C7E6BA2208C94A5007C67C2 /* RegistrationPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */; };
 		2C7E6BA4208C94B0007C67C2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA3208C94B0007C67C2 /* ProfileView.swift */; };
@@ -18,6 +18,7 @@
 		2C7E6BA8208C97A6007C67C2 /* ProfileModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA7208C97A6007C67C2 /* ProfileModule.swift */; };
 		2C7E6BAA208C988B007C67C2 /* RegistrationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA9208C988B007C67C2 /* RegistrationModule.swift */; };
 		2C7E6BAC208C98A9007C67C2 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BAB208C98A9007C67C2 /* LoginModule.swift */; };
+		2C7E6BB2208CAA83007C67C2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BB1208CAA83007C67C2 /* LoginViewController.m */; };
 		2C9AC4C52087C01E0083ACA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */; };
 		2C9AC4CC2087C01F0083ACA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */; };
 		2C9AC4CF2087C0200083ACA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */; };
@@ -42,8 +43,10 @@
 /* Begin PBXFileReference section */
 		00C2005F1B70C4AEBCE8547B /* Pods-AuthTestAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		0FD9AA130A380FE7202AFB2E /* Pods_AuthTestAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthTestAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C530229208CC7EC00D9833F /* LoginPresenting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPresenting.h; sourceTree = "<group>"; };
+		2C53022A208CC88300D9833F /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		2C53022B208CE9F800D9833F /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
 		2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenting.swift; sourceTree = "<group>"; };
-		2C7E6B98208C79A3007C67C2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenting.swift; sourceTree = "<group>"; };
 		2C7E6BA3208C94B0007C67C2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		2C7E6BA7208C97A6007C67C2 /* ProfileModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModule.swift; sourceTree = "<group>"; };
 		2C7E6BA9208C988B007C67C2 /* RegistrationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModule.swift; sourceTree = "<group>"; };
 		2C7E6BAB208C98A9007C67C2 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
+		2C7E6BAF208CAA82007C67C2 /* AuthTestAssignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AuthTestAssignment-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C7E6BB0208CAA83007C67C2 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2C7E6BB1208CAA83007C67C2 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2C9AC4C12087C01E0083ACA4 /* AuthTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,13 +96,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C7E6B9A208C9456007C67C2 /* Architecturу components */ = {
+		2C7E6B9A208C9456007C67C2 /* Architecture components */ = {
 			isa = PBXGroup;
 			children = (
 				2C9AC4E42087C0C80083ACA4 /* ApplicationFlow.swift */,
 				2C9AC4EC2087C7810083ACA4 /* Architecture components.swift */,
 			);
-			path = "Architecturу components";
+			path = "Architecture components";
 			sourceTree = "<group>";
 		};
 		2C7E6B9B208C9465007C67C2 /* Modules */ = {
@@ -114,7 +120,11 @@
 			children = (
 				2C7E6BAB208C98A9007C67C2 /* LoginModule.swift */,
 				2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */,
-				2C7E6B98208C79A3007C67C2 /* LoginView.swift */,
+				2C7E6BB0208CAA83007C67C2 /* LoginViewController.h */,
+				2C7E6BB1208CAA83007C67C2 /* LoginViewController.m */,
+				2C7E6BAF208CAA82007C67C2 /* AuthTestAssignment-Bridging-Header.h */,
+				2C530229208CC7EC00D9833F /* LoginPresenting.h */,
+				2C53022A208CC88300D9833F /* LoginView.h */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -143,17 +153,18 @@
 			isa = PBXGroup;
 			children = (
 				2C9AC4E62087C3510083ACA4 /* Networking.swift */,
+				2C53022B208CE9F800D9833F /* UserStorage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		2C7E6BAE208C9922007C67C2 /* Models */ = {
+		2C7E6BAE208C9922007C67C2 /* Plain models */ = {
 			isa = PBXGroup;
 			children = (
 				2C9AC4E82087C4570083ACA4 /* User.swift */,
 				2C9AC4EA2087C59C0083ACA4 /* Credentials.swift */,
 			);
-			path = Models;
+			path = "Plain models";
 			sourceTree = "<group>";
 		};
 		2C9AC4B82087C01E0083ACA4 = {
@@ -179,10 +190,10 @@
 		2C9AC4C32087C01E0083ACA4 /* AuthTestAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				2C7E6BAE208C9922007C67C2 /* Models */,
+				2C7E6BAE208C9922007C67C2 /* Plain models */,
 				2C7E6BAD208C990A007C67C2 /* Services */,
 				2C7E6B9B208C9465007C67C2 /* Modules */,
-				2C7E6B9A208C9456007C67C2 /* Architecturу components */,
+				2C7E6B9A208C9456007C67C2 /* Architecture components */,
 				2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */,
 				2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */,
 				2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */,
@@ -276,6 +287,7 @@
 				TargetAttributes = {
 					2C9AC4C02087C01E0083ACA4 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					2C9AC4D42087C0200083ACA4 = {
 						CreatedOnToolsVersion = 9.3;
@@ -366,18 +378,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/Yalta/Yalta.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yalta.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -436,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C53022C208CE9F800D9833F /* UserStorage.swift in Sources */,
 				2C7E6BAA208C988B007C67C2 /* RegistrationModule.swift in Sources */,
 				2C7E6BA0208C9497007C67C2 /* RegistrationView.swift in Sources */,
 				2C7E6BA4208C94B0007C67C2 /* ProfileView.swift in Sources */,
@@ -444,12 +457,12 @@
 				2C9AC4C52087C01E0083ACA4 /* AppDelegate.swift in Sources */,
 				2C7E6BA8208C97A6007C67C2 /* ProfileModule.swift in Sources */,
 				2C7E6BA6208C94BE007C67C2 /* ProfilePresenting.swift in Sources */,
+				2C7E6BB2208CAA83007C67C2 /* LoginViewController.m in Sources */,
 				2C9AC4E92087C4570083ACA4 /* User.swift in Sources */,
 				2C7E6B97208C78B5007C67C2 /* LoginPresenting.swift in Sources */,
 				2C7E6BAC208C98A9007C67C2 /* LoginModule.swift in Sources */,
 				2C9AC4E72087C3510083ACA4 /* Networking.swift in Sources */,
 				2C7E6BA2208C94A5007C67C2 /* RegistrationPresenting.swift in Sources */,
-				2C7E6B99208C79A3007C67C2 /* LoginView.swift in Sources */,
 				2C9AC4ED2087C7810083ACA4 /* Architecture components.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +532,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -579,6 +593,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -603,16 +618,18 @@
 			baseConfigurationReference = 823C67E25E72D38BB9DB7E53 /* Pods-AuthTestAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AuthTestAssignment/Modules/Login/AuthTestAssignment-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,16 +640,17 @@
 			baseConfigurationReference = 87E14C98E42F75E9C21E8877 /* Pods-AuthTestAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AuthTestAssignment/Modules/Login/AuthTestAssignment-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -647,11 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
 				INFOPLIST_FILE = AuthTestAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -669,11 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
 				INFOPLIST_FILE = AuthTestAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

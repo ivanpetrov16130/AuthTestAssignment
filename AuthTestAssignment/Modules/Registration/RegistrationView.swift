@@ -1,7 +1,7 @@
 import UIKit
 
 
-protocol RegistrationView: AnyView {
+protocol RegistrationView: class {
   
 }
 
@@ -18,6 +18,11 @@ class RegistrationViewController: UIViewController {
     fatalError("init(coder:) has not been implemented")
   }
   
+  override func loadView() {
+    super.loadView()
+    self.view.backgroundColor = .white
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -25,8 +30,5 @@ class RegistrationViewController: UIViewController {
 }
 
 extension RegistrationViewController: RegistrationView {
-  
-
-  
   
 }

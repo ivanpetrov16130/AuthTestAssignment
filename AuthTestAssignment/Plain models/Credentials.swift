@@ -1,6 +1,6 @@
 import Foundation
 
 struct Credentials {
-  let login: String
+  let username: String
   let password: String
 }
