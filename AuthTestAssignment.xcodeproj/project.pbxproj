@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20CD3DE3A617B87A89F6F91B /* Pods_AuthTestAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD9AA130A380FE7202AFB2E /* Pods_AuthTestAssignmentTests.framework */; };
+		21164E5E5EBC7E04F159CD75 /* Pods_AuthTestAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9546301F4536612B15E4E57 /* Pods_AuthTestAssignment.framework */; };
+		2C7E6B97208C78B5007C67C2 /* LoginPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */; };
+		2C7E6B99208C79A3007C67C2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B98208C79A3007C67C2 /* LoginView.swift */; };
+		2C7E6BA0208C9497007C67C2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */; };
+		2C7E6BA2208C94A5007C67C2 /* RegistrationPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */; };
+		2C7E6BA4208C94B0007C67C2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA3208C94B0007C67C2 /* ProfileView.swift */; };
+		2C7E6BA6208C94BE007C67C2 /* ProfilePresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA5208C94BE007C67C2 /* ProfilePresenting.swift */; };
+		2C7E6BA8208C97A6007C67C2 /* ProfileModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA7208C97A6007C67C2 /* ProfileModule.swift */; };
+		2C7E6BAA208C988B007C67C2 /* RegistrationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA9208C988B007C67C2 /* RegistrationModule.swift */; };
+		2C7E6BAC208C98A9007C67C2 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BAB208C98A9007C67C2 /* LoginModule.swift */; };
 		2C9AC4C52087C01E0083ACA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */; };
-		2C9AC4C72087C01E0083ACA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4C62087C01E0083ACA4 /* ViewController.swift */; };
-		2C9AC4CA2087C01E0083ACA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AC4C82087C01E0083ACA4 /* Main.storyboard */; };
 		2C9AC4CC2087C01F0083ACA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */; };
 		2C9AC4CF2087C0200083ACA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */; };
 		2C9AC4DA2087C0200083ACA4 /* AuthTestAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4D92087C0200083ACA4 /* AuthTestAssignmentTests.swift */; };
+		2C9AC4E52087C0C80083ACA4 /* ApplicationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4E42087C0C80083ACA4 /* ApplicationFlow.swift */; };
+		2C9AC4E72087C3510083ACA4 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4E62087C3510083ACA4 /* Networking.swift */; };
+		2C9AC4E92087C4570083ACA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4E82087C4570083ACA4 /* User.swift */; };
+		2C9AC4EB2087C59C0083ACA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4EA2087C59C0083ACA4 /* Credentials.swift */; };
+		2C9AC4ED2087C7810083ACA4 /* Architecture components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4EC2087C7810083ACA4 /* Architecture components.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +40,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C2005F1B70C4AEBCE8547B /* Pods-AuthTestAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		0FD9AA130A380FE7202AFB2E /* Pods_AuthTestAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthTestAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenting.swift; sourceTree = "<group>"; };
+		2C7E6B98208C79A3007C67C2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenting.swift; sourceTree = "<group>"; };
+		2C7E6BA3208C94B0007C67C2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2C7E6BA5208C94BE007C67C2 /* ProfilePresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenting.swift; sourceTree = "<group>"; };
+		2C7E6BA7208C97A6007C67C2 /* ProfileModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModule.swift; sourceTree = "<group>"; };
+		2C7E6BA9208C988B007C67C2 /* RegistrationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModule.swift; sourceTree = "<group>"; };
+		2C7E6BAB208C98A9007C67C2 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
 		2C9AC4C12087C01E0083ACA4 /* AuthTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C9AC4C62087C01E0083ACA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C9AC4C92087C01E0083ACA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C9AC4CE2087C0200083ACA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C9AC4D02087C0200083ACA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C9AC4D52087C0200083ACA4 /* AuthTestAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthTestAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9AC4D92087C0200083ACA4 /* AuthTestAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTestAssignmentTests.swift; sourceTree = "<group>"; };
 		2C9AC4DB2087C0200083ACA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C9AC4E42087C0C80083ACA4 /* ApplicationFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationFlow.swift; sourceTree = "<group>"; };
+		2C9AC4E62087C3510083ACA4 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		2C9AC4E82087C4570083ACA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C9AC4EA2087C59C0083ACA4 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		2C9AC4EC2087C7810083ACA4 /* Architecture components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Architecture components.swift"; sourceTree = "<group>"; };
+		5F271A677F27A2039B461AF2 /* Pods-AuthTestAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		823C67E25E72D38BB9DB7E53 /* Pods-AuthTestAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		87E14C98E42F75E9C21E8877 /* Pods-AuthTestAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		E9546301F4536612B15E4E57 /* Pods_AuthTestAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthTestAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21164E5E5EBC7E04F159CD75 /* Pods_AuthTestAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +83,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CD3DE3A617B87A89F6F91B /* Pods_AuthTestAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7E6B9A208C9456007C67C2 /* Architecturу components */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AC4E42087C0C80083ACA4 /* ApplicationFlow.swift */,
+				2C9AC4EC2087C7810083ACA4 /* Architecture components.swift */,
+			);
+			path = "Architecturу components";
+			sourceTree = "<group>";
+		};
+		2C7E6B9B208C9465007C67C2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2C7E6B9C208C946C007C67C2 /* Login */,
+				2C7E6B9D208C9471007C67C2 /* Registration */,
+				2C7E6B9E208C9478007C67C2 /* Profile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2C7E6B9C208C946C007C67C2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2C7E6BAB208C98A9007C67C2 /* LoginModule.swift */,
+				2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */,
+				2C7E6B98208C79A3007C67C2 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2C7E6B9D208C9471007C67C2 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2C7E6BA9208C988B007C67C2 /* RegistrationModule.swift */,
+				2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */,
+				2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		2C7E6B9E208C9478007C67C2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2C7E6BA7208C97A6007C67C2 /* ProfileModule.swift */,
+				2C7E6BA5208C94BE007C67C2 /* ProfilePresenting.swift */,
+				2C7E6BA3208C94B0007C67C2 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2C7E6BAD208C990A007C67C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AC4E62087C3510083ACA4 /* Networking.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2C7E6BAE208C9922007C67C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AC4E82087C4570083ACA4 /* User.swift */,
+				2C9AC4EA2087C59C0083ACA4 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2C9AC4B82087C01E0083ACA4 = {
 			isa = PBXGroup;
 			children = (
 				2C9AC4C32087C01E0083ACA4 /* AuthTestAssignment */,
 				2C9AC4D82087C0200083ACA4 /* AuthTestAssignmentTests */,
 				2C9AC4C22087C01E0083ACA4 /* Products */,
+				33D21984329D25037A9BAE86 /* Pods */,
+				9842DED47B89C88506E520DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +179,11 @@
 		2C9AC4C32087C01E0083ACA4 /* AuthTestAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				2C7E6BAE208C9922007C67C2 /* Models */,
+				2C7E6BAD208C990A007C67C2 /* Services */,
+				2C7E6B9B208C9465007C67C2 /* Modules */,
+				2C7E6B9A208C9456007C67C2 /* Architecturу components */,
 				2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */,
-				2C9AC4C62087C01E0083ACA4 /* ViewController.swift */,
-				2C9AC4C82087C01E0083ACA4 /* Main.storyboard */,
 				2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */,
 				2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */,
 				2C9AC4D02087C0200083ACA4 /* Info.plist */,
@@ -96,6 +200,26 @@
 			path = AuthTestAssignmentTests;
 			sourceTree = "<group>";
 		};
+		33D21984329D25037A9BAE86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				823C67E25E72D38BB9DB7E53 /* Pods-AuthTestAssignment.debug.xcconfig */,
+				87E14C98E42F75E9C21E8877 /* Pods-AuthTestAssignment.release.xcconfig */,
+				5F271A677F27A2039B461AF2 /* Pods-AuthTestAssignmentTests.debug.xcconfig */,
+				00C2005F1B70C4AEBCE8547B /* Pods-AuthTestAssignmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9842DED47B89C88506E520DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9546301F4536612B15E4E57 /* Pods_AuthTestAssignment.framework */,
+				0FD9AA130A380FE7202AFB2E /* Pods_AuthTestAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C9AC4DE2087C0200083ACA4 /* Build configuration list for PBXNativeTarget "AuthTestAssignment" */;
 			buildPhases = (
+				420ED40C93C1A93BE9D0CEFB /* [CP] Check Pods Manifest.lock */,
 				2C9AC4BD2087C01E0083ACA4 /* Sources */,
 				2C9AC4BE2087C01E0083ACA4 /* Frameworks */,
 				2C9AC4BF2087C01E0083ACA4 /* Resources */,
+				6E1FF992839BD848893E829D /* [CP] Embed Pods Frameworks */,
+				C891665B0D8BDA9D148B3589 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C9AC4E12087C0200083ACA4 /* Build configuration list for PBXNativeTarget "AuthTestAssignmentTests" */;
 			buildPhases = (
+				632F3651579C4043EFCC75B3 /* [CP] Check Pods Manifest.lock */,
 				2C9AC4D12087C0200083ACA4 /* Sources */,
 				2C9AC4D22087C0200083ACA4 /* Frameworks */,
 				2C9AC4D32087C0200083ACA4 /* Resources */,
+				D1E69F65F5A3268D36377142 /* [CP] Embed Pods Frameworks */,
+				7F41D2EC85EF4E960E09B2A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,7 +309,6 @@
 			files = (
 				2C9AC4CF2087C0200083ACA4 /* LaunchScreen.storyboard in Resources */,
 				2C9AC4CC2087C01F0083ACA4 /* Assets.xcassets in Resources */,
-				2C9AC4CA2087C01E0083ACA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +321,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		420ED40C93C1A93BE9D0CEFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthTestAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		632F3651579C4043EFCC75B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthTestAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E1FF992839BD848893E829D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/Yalta/Yalta.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yalta.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F41D2EC85EF4E960E09B2A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C891665B0D8BDA9D148B3589 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E69F65F5A3268D36377142 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C9AC4BD2087C01E0083ACA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C9AC4C72087C01E0083ACA4 /* ViewController.swift in Sources */,
+				2C7E6BAA208C988B007C67C2 /* RegistrationModule.swift in Sources */,
+				2C7E6BA0208C9497007C67C2 /* RegistrationView.swift in Sources */,
+				2C7E6BA4208C94B0007C67C2 /* ProfileView.swift in Sources */,
+				2C9AC4EB2087C59C0083ACA4 /* Credentials.swift in Sources */,
+				2C9AC4E52087C0C80083ACA4 /* ApplicationFlow.swift in Sources */,
 				2C9AC4C52087C01E0083ACA4 /* AppDelegate.swift in Sources */,
+				2C7E6BA8208C97A6007C67C2 /* ProfileModule.swift in Sources */,
+				2C7E6BA6208C94BE007C67C2 /* ProfilePresenting.swift in Sources */,
+				2C9AC4E92087C4570083ACA4 /* User.swift in Sources */,
+				2C7E6B97208C78B5007C67C2 /* LoginPresenting.swift in Sources */,
+				2C7E6BAC208C98A9007C67C2 /* LoginModule.swift in Sources */,
+				2C9AC4E72087C3510083ACA4 /* Networking.swift in Sources */,
+				2C7E6BA2208C94A5007C67C2 /* RegistrationPresenting.swift in Sources */,
+				2C7E6B99208C79A3007C67C2 /* LoginView.swift in Sources */,
+				2C9AC4ED2087C7810083ACA4 /* Architecture components.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +473,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C9AC4C82087C01E0083ACA4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C9AC4C92087C01E0083ACA4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,11 +600,13 @@
 		};
 		2C9AC4DF2087C0200083ACA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823C67E25E72D38BB9DB7E53 /* Pods-AuthTestAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,11 +620,13 @@
 		};
 		2C9AC4E02087C0200083ACA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E14C98E42F75E9C21E8877 /* Pods-AuthTestAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +640,7 @@
 		};
 		2C9AC4E22087C0200083ACA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F271A677F27A2039B461AF2 /* Pods-AuthTestAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +662,7 @@
 		};
 		2C9AC4E32087C0200083ACA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C2005F1B70C4AEBCE8547B /* Pods-AuthTestAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
