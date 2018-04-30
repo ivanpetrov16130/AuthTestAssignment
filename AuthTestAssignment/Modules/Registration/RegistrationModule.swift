@@ -13,7 +13,7 @@ class RegistrationModule: Module {
   private(set) lazy var presentersContainer: Container = {
     let container = Container(parent: servicesContainer)
     container.register(RegistrationPresenting.self) { resolver in
-      RegistrationPresenter(owner: self, provider: resolver.resolve(AuthProvider.self)!)
+      RegistrationPresenter(owner: self, provider: resolver.resolve(AuthProvider.self)!, validation: Validations.registration)
     }
     return container
   }()

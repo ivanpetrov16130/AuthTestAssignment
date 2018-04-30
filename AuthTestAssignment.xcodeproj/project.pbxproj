@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		20CD3DE3A617B87A89F6F91B /* Pods_AuthTestAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD9AA130A380FE7202AFB2E /* Pods_AuthTestAssignmentTests.framework */; };
 		21164E5E5EBC7E04F159CD75 /* Pods_AuthTestAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9546301F4536612B15E4E57 /* Pods_AuthTestAssignment.framework */; };
+		2C1E38D420950F01009D6267 /* ActionSheetPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E38D320950F01009D6267 /* ActionSheetPresentation.swift */; };
 		2C53022C208CE9F800D9833F /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53022B208CE9F800D9833F /* UserStorage.swift */; };
+		2C7BCEDE2095E62E00B1F0F3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BCEDD2095E62E00B1F0F3 /* Validation.swift */; };
+		2C7BCEE02095E71300B1F0F3 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7BCEDF2095E71300B1F0F3 /* Registration.swift */; };
 		2C7E6B97208C78B5007C67C2 /* LoginPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */; };
 		2C7E6BA0208C9497007C67C2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */; };
 		2C7E6BA2208C94A5007C67C2 /* RegistrationPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */; };
@@ -28,6 +31,10 @@
 		2C9AC4E92087C4570083ACA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4E82087C4570083ACA4 /* User.swift */; };
 		2C9AC4EB2087C59C0083ACA4 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4EA2087C59C0083ACA4 /* Credentials.swift */; };
 		2C9AC4ED2087C7810083ACA4 /* Architecture components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4EC2087C7810083ACA4 /* Architecture components.swift */; };
+		2CD34E37208E4789004465A0 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD34E35208E4789004465A0 /* RegistrationViewController.xib */; };
+		2CD34E39208E4850004465A0 /* UIKit Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD34E38208E4850004465A0 /* UIKit Extensions.swift */; };
+		2CD34E3B208E53EB004465A0 /* RegistrationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD34E3A208E53EB004465A0 /* RegistrationInputView.swift */; };
+		2CD34E3F208E5489004465A0 /* RegistrationInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD34E3E208E5489004465A0 /* RegistrationInputView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +50,12 @@
 /* Begin PBXFileReference section */
 		00C2005F1B70C4AEBCE8547B /* Pods-AuthTestAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		0FD9AA130A380FE7202AFB2E /* Pods_AuthTestAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthTestAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1E38D320950F01009D6267 /* ActionSheetPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPresentation.swift; sourceTree = "<group>"; };
 		2C530229208CC7EC00D9833F /* LoginPresenting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPresenting.h; sourceTree = "<group>"; };
 		2C53022A208CC88300D9833F /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		2C53022B208CE9F800D9833F /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		2C7BCEDD2095E62E00B1F0F3 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		2C7BCEDF2095E71300B1F0F3 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		2C7E6B96208C78B5007C67C2 /* LoginPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenting.swift; sourceTree = "<group>"; };
 		2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenting.swift; sourceTree = "<group>"; };
@@ -70,6 +80,10 @@
 		2C9AC4E82087C4570083ACA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2C9AC4EA2087C59C0083ACA4 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		2C9AC4EC2087C7810083ACA4 /* Architecture components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Architecture components.swift"; sourceTree = "<group>"; };
+		2CD34E35208E4789004465A0 /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		2CD34E38208E4850004465A0 /* UIKit Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit Extensions.swift"; sourceTree = "<group>"; };
+		2CD34E3A208E53EB004465A0 /* RegistrationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInputView.swift; sourceTree = "<group>"; };
+		2CD34E3E208E5489004465A0 /* RegistrationInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationInputView.xib; sourceTree = "<group>"; };
 		5F271A677F27A2039B461AF2 /* Pods-AuthTestAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		823C67E25E72D38BB9DB7E53 /* Pods-AuthTestAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		87E14C98E42F75E9C21E8877 /* Pods-AuthTestAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1E38D220950EC8009D6267 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2C1E38D320950F01009D6267 /* ActionSheetPresentation.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		2C7E6B9A208C9456007C67C2 /* Architecture components */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +157,9 @@
 				2C7E6BA9208C988B007C67C2 /* RegistrationModule.swift */,
 				2C7E6BA1208C94A5007C67C2 /* RegistrationPresenting.swift */,
 				2C7E6B9F208C9497007C67C2 /* RegistrationView.swift */,
+				2CD34E35208E4789004465A0 /* RegistrationViewController.xib */,
+				2CD34E3A208E53EB004465A0 /* RegistrationInputView.swift */,
+				2CD34E3E208E5489004465A0 /* RegistrationInputView.xib */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -154,6 +179,7 @@
 			children = (
 				2C9AC4E62087C3510083ACA4 /* Networking.swift */,
 				2C53022B208CE9F800D9833F /* UserStorage.swift */,
+				2C7BCEDD2095E62E00B1F0F3 /* Validation.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -163,6 +189,7 @@
 			children = (
 				2C9AC4E82087C4570083ACA4 /* User.swift */,
 				2C9AC4EA2087C59C0083ACA4 /* Credentials.swift */,
+				2C7BCEDF2095E71300B1F0F3 /* Registration.swift */,
 			);
 			path = "Plain models";
 			sourceTree = "<group>";
@@ -190,6 +217,7 @@
 		2C9AC4C32087C01E0083ACA4 /* AuthTestAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				2C1E38D220950EC8009D6267 /* Shared */,
 				2C7E6BAE208C9922007C67C2 /* Plain models */,
 				2C7E6BAD208C990A007C67C2 /* Services */,
 				2C7E6B9B208C9465007C67C2 /* Modules */,
@@ -198,6 +226,7 @@
 				2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */,
 				2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */,
 				2C9AC4D02087C0200083ACA4 /* Info.plist */,
+				2CD34E38208E4850004465A0 /* UIKit Extensions.swift */,
 			);
 			path = AuthTestAssignment;
 			sourceTree = "<group>";
@@ -243,7 +272,6 @@
 				2C9AC4BE2087C01E0083ACA4 /* Frameworks */,
 				2C9AC4BF2087C01E0083ACA4 /* Resources */,
 				6E1FF992839BD848893E829D /* [CP] Embed Pods Frameworks */,
-				C891665B0D8BDA9D148B3589 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,8 +290,6 @@
 				2C9AC4D12087C0200083ACA4 /* Sources */,
 				2C9AC4D22087C0200083ACA4 /* Frameworks */,
 				2C9AC4D32087C0200083ACA4 /* Resources */,
-				D1E69F65F5A3268D36377142 /* [CP] Embed Pods Frameworks */,
-				7F41D2EC85EF4E960E09B2A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD34E3F208E5489004465A0 /* RegistrationInputView.xib in Resources */,
+				2CD34E37208E4789004465A0 /* RegistrationViewController.xib in Resources */,
 				2C9AC4CF2087C0200083ACA4 /* LaunchScreen.storyboard in Resources */,
 				2C9AC4CC2087C01F0083ACA4 /* Assets.xcassets in Resources */,
 			);
@@ -396,51 +424,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7F41D2EC85EF4E960E09B2A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C891665B0D8BDA9D148B3589 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1E69F65F5A3268D36377142 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -456,12 +439,17 @@
 				2C9AC4E52087C0C80083ACA4 /* ApplicationFlow.swift in Sources */,
 				2C9AC4C52087C01E0083ACA4 /* AppDelegate.swift in Sources */,
 				2C7E6BA8208C97A6007C67C2 /* ProfileModule.swift in Sources */,
+				2C7BCEDE2095E62E00B1F0F3 /* Validation.swift in Sources */,
 				2C7E6BA6208C94BE007C67C2 /* ProfilePresenting.swift in Sources */,
 				2C7E6BB2208CAA83007C67C2 /* LoginViewController.m in Sources */,
 				2C9AC4E92087C4570083ACA4 /* User.swift in Sources */,
+				2CD34E39208E4850004465A0 /* UIKit Extensions.swift in Sources */,
 				2C7E6B97208C78B5007C67C2 /* LoginPresenting.swift in Sources */,
+				2C1E38D420950F01009D6267 /* ActionSheetPresentation.swift in Sources */,
 				2C7E6BAC208C98A9007C67C2 /* LoginModule.swift in Sources */,
+				2C7BCEE02095E71300B1F0F3 /* Registration.swift in Sources */,
 				2C9AC4E72087C3510083ACA4 /* Networking.swift in Sources */,
+				2CD34E3B208E53EB004465A0 /* RegistrationInputView.swift in Sources */,
 				2C7E6BA2208C94A5007C67C2 /* RegistrationPresenting.swift in Sources */,
 				2C9AC4ED2087C7810083ACA4 /* Architecture components.swift in Sources */,
 			);
@@ -625,7 +613,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AuthTestAssignment/Modules/Login/AuthTestAssignment-Bridging-Header.h";
@@ -647,7 +638,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AuthTestAssignment/Modules/Login/AuthTestAssignment-Bridging-Header.h";
@@ -665,7 +659,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
 				INFOPLIST_FILE = AuthTestAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -683,7 +681,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2RR86F36;
 				INFOPLIST_FILE = AuthTestAssignmentTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

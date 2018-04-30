@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="AuthTestAssignment" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="oq3-yw-7Sg" id="ZZE-5C-hmk"/>
+                <outlet property="nameInputView" destination="qPO-U9-dBa" id="hY9-fz-X2w"/>
+                <outlet property="nicknameInputView" destination="iLJ-Gz-KkS" id="xf0-xH-NWJ"/>
+                <outlet property="passwordInputView" destination="AKA-Z1-VWS" id="Y4U-k4-q7k"/>
+                <outlet property="patronymicInputView" destination="kkg-02-Pg0" id="EFf-cD-kmN"/>
+                <outlet property="surnameInputView" destination="AZY-n2-Qc7" id="5F7-Zw-vSM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="757"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUB-zf-P9f">
+                    <rect key="frame" x="0.0" y="28" width="375" height="729"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuL-QL-7Ah">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="71" placeholderIntrinsicHeight="90" translatesAutoresizingMaskIntoConstraints="NO" id="iLJ-Gz-KkS" customClass="RegistrationInputView" customModule="AuthTestAssignment" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="8" width="359" height="90"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Логин"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isTextFieldSecurityEnabled" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="70.5" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-n2-Qc7" customClass="RegistrationInputView" customModule="AuthTestAssignment" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="106" width="359" height="128"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Фамилия"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="70.5" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="qPO-U9-dBa" customClass="RegistrationInputView" customModule="AuthTestAssignment" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="242" width="359" height="128"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Имя"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="70.5" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="kkg-02-Pg0" customClass="RegistrationInputView" customModule="AuthTestAssignment" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="378" width="359" height="128"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Отчество"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AKA-Z1-VWS" customClass="RegistrationInputView" customModule="AuthTestAssignment" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="514" width="359" height="90"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Пароль"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isTextFieldSecurityEnabled" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textFieldKeyboardType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-bv-sSq">
+                                    <rect key="frame" x="8" y="612" width="359" height="30"/>
+                                    <subviews>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oq3-yw-7Sg">
+                                            <rect key="frame" x="129.5" y="-640" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="7Zh-IX-A7g"/>
+                                                <constraint firstAttribute="width" constant="100" id="8GT-sT-ntw"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnI-bp-0sh" userLabel="Choose Avatar Button">
+                                            <rect key="frame" x="117" y="0.0" width="125" height="30"/>
+                                            <state key="normal" title="Загрузить аватар"/>
+                                            <connections>
+                                                <action selector="chooseAvatar" destination="-1" eventType="touchUpInside" id="fgp-22-GQq"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="oq3-yw-7Sg" firstAttribute="centerX" secondItem="mVd-bv-sSq" secondAttribute="centerX" id="0Hq-bW-4i8"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efx-Jv-OMe">
+                                    <rect key="frame" x="113" y="666" width="149" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="149" id="ag8-U5-c4n"/>
+                                    </constraints>
+                                    <state key="normal" title="Зарегистрироваться"/>
+                                    <connections>
+                                        <action selector="register:" destination="-1" eventType="touchUpInside" id="fqW-qa-c7L"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="efx-Jv-OMe" firstAttribute="top" secondItem="mVd-bv-sSq" secondAttribute="bottom" constant="24" id="1vd-JJ-wot"/>
+                                <constraint firstItem="AZY-n2-Qc7" firstAttribute="top" secondItem="iLJ-Gz-KkS" secondAttribute="bottom" constant="8" id="2fm-SB-feh"/>
+                                <constraint firstAttribute="trailing" secondItem="AZY-n2-Qc7" secondAttribute="trailing" constant="8" id="3RS-EK-hXM"/>
+                                <constraint firstAttribute="trailing" secondItem="mVd-bv-sSq" secondAttribute="trailing" constant="8" id="78l-7N-Mwg"/>
+                                <constraint firstItem="qPO-U9-dBa" firstAttribute="leading" secondItem="JuL-QL-7Ah" secondAttribute="leading" constant="8" id="7k7-qW-JrM"/>
+                                <constraint firstAttribute="trailing" secondItem="iLJ-Gz-KkS" secondAttribute="trailing" constant="8" id="Cy3-lG-jUr"/>
+                                <constraint firstItem="qPO-U9-dBa" firstAttribute="top" secondItem="AZY-n2-Qc7" secondAttribute="bottom" constant="8" id="IB9-7D-aS4"/>
+                                <constraint firstItem="mVd-bv-sSq" firstAttribute="top" secondItem="AKA-Z1-VWS" secondAttribute="bottom" constant="8" id="QFc-W6-ziM"/>
+                                <constraint firstItem="kkg-02-Pg0" firstAttribute="top" secondItem="qPO-U9-dBa" secondAttribute="bottom" constant="8" id="SHO-5U-HK0"/>
+                                <constraint firstItem="AKA-Z1-VWS" firstAttribute="leading" secondItem="JuL-QL-7Ah" secondAttribute="leading" constant="8" id="bID-mD-5Jf"/>
+                                <constraint firstAttribute="trailing" secondItem="qPO-U9-dBa" secondAttribute="trailing" constant="8" id="dEX-Yf-Noo"/>
+                                <constraint firstItem="iLJ-Gz-KkS" firstAttribute="leading" secondItem="JuL-QL-7Ah" secondAttribute="leading" constant="8" id="eFv-6f-0Wc"/>
+                                <constraint firstAttribute="trailing" secondItem="kkg-02-Pg0" secondAttribute="trailing" constant="8" id="hdn-bZ-QLw"/>
+                                <constraint firstItem="AKA-Z1-VWS" firstAttribute="top" secondItem="kkg-02-Pg0" secondAttribute="bottom" constant="8" id="hoU-vj-G48"/>
+                                <constraint firstItem="kkg-02-Pg0" firstAttribute="leading" secondItem="JuL-QL-7Ah" secondAttribute="leading" constant="8" id="lSi-Vu-BIE"/>
+                                <constraint firstAttribute="bottom" secondItem="efx-Jv-OMe" secondAttribute="bottom" constant="24" id="mve-dK-dd2"/>
+                                <constraint firstItem="mVd-bv-sSq" firstAttribute="leading" secondItem="JuL-QL-7Ah" secondAttribute="leading" constant="8" id="pua-g7-4Q5"/>
+                                <constraint firstItem="iLJ-Gz-KkS" firstAttribute="top" secondItem="JuL-QL-7Ah" secondAttribute="top" constant="8" id="vO7-xp-tCW"/>
+                                <constraint firstAttribute="trailing" secondItem="AKA-Z1-VWS" secondAttribute="trailing" constant="8" id="vZJ-Ef-NkU"/>
+                                <constraint firstItem="efx-Jv-OMe" firstAttribute="centerX" secondItem="JuL-QL-7Ah" secondAttribute="centerX" id="w4p-lL-2d0"/>
+                                <constraint firstItem="AZY-n2-Qc7" firstAttribute="leading" secondItem="JuL-QL-7Ah" secondAttribute="leading" constant="8" id="wF5-aj-CSf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="JuL-QL-7Ah" firstAttribute="leading" secondItem="AUB-zf-P9f" secondAttribute="leading" id="5sA-xH-wBJ"/>
+                        <constraint firstAttribute="trailing" secondItem="JuL-QL-7Ah" secondAttribute="trailing" id="hdy-LS-AKJ"/>
+                        <constraint firstItem="JuL-QL-7Ah" firstAttribute="top" secondItem="AUB-zf-P9f" secondAttribute="top" id="qbg-OZ-8Q3"/>
+                        <constraint firstAttribute="bottom" secondItem="JuL-QL-7Ah" secondAttribute="bottom" id="vBM-fl-BwY"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.25787622560000001" blue="0.71656504560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JuL-QL-7Ah" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="HxL-0j-LXs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AUB-zf-P9f" secondAttribute="trailing" id="UPQ-yD-cYd"/>
+                <constraint firstItem="AUB-zf-P9f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ahi-VS-rWx"/>
+                <constraint firstItem="JuL-QL-7Ah" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ia1-Vm-EdA"/>
+                <constraint firstItem="AUB-zf-P9f" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="naE-oh-WD0"/>
+                <constraint firstItem="AUB-zf-P9f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="so3-39-Igj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-159" y="-405"/>
+        </view>
+    </objects>
+</document>
