@@ -3,6 +3,7 @@ import Foundation
 
 protocol RegistrationPresenting: AnyPresenting {
   func registerUser()
+  func close()
 }
 
 class RegistrationPresenter: BasicPresenter<RegistrationModule>, RegistrationPresenting {
@@ -28,6 +29,10 @@ class RegistrationPresenter: BasicPresenter<RegistrationModule>, RegistrationPre
     case .success: owner.finish(output: .finished(result: (), destination: .profile))
     case .failure(errorsForInvalidFields: let errorsForInvalidFields): view?.show(errorsForInvalidFields)
     }
+  }
+  
+  func close() {
+    owner.finish(output: .finished(result: (), destination: .previous))
   }
   
 }

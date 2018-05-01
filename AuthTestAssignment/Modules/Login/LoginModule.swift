@@ -2,7 +2,7 @@ import Swinject
 
 class LoginModule: Module {
   
-  typealias RootView = UINavigationController
+  typealias RootView = UIViewController
   typealias Input = ()
   typealias Output = ()
   typealias IntermediateData = ()
@@ -28,7 +28,7 @@ class LoginModule: Module {
   }()
   
   var transitioned: TransitionType?
-  lazy var rootView: UINavigationController = RootView.init(rootViewController: viewsContainer.resolve(LoginView.self) as! UIViewController)
+  lazy var rootView: UIViewController = viewsContainer.resolve(LoginView.self) as! UIViewController
   
   let input: ()
   unowned let applicationFlow: ApplicationFlow

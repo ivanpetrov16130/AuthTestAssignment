@@ -14,9 +14,41 @@ enum Destination {
   case previous
 }
 
+class ModuleRootViewStack: NSObject, UINavigationControllerDelegate {
+  private var moduleRootViews: [UIViewController] = []
+  
+  func push<NewModule: Module>(_ module: NewModule?, transitioned: TransitionType) {
+    guard let module = module, let previousModuleRootView = moduleRootViews.last else { return }
+    moduleRootViews.append(module.rootView)
+    module.run(basedOn: previousModuleRootView, transitioned: transitioned)
+  }
+  
+  func set<RootModule: Module>(_ module: RootModule?, on window: UIWindow?) {
+    guard let module = module, moduleRootViews.isEmpty else { return }
+    let n = UINavigationController(rootViewController: module.rootView)
+    moduleRootViews.append(module.rootView)
+    n.delegate = self
+    window?.rootViewController = n
+  }
+  
+  func pop<CurrentModule: Module>(module: CurrentModule?) {
+    guard let module = module else { return }
+    _ = moduleRootViews.popLast()
+    module.dismiss()
+  }
+  
+  func replace<CurrentModule: Module, NewModule: Module>(_ currentModule: CurrentModule?, with module: NewModule?, transitioned: TransitionType) {
+    self.pop(module: currentModule)
+    self.push(module, transitioned: transitioned)
+  }
+  
+}
+
 class ApplicationFlow {
   
   typealias View = UIViewController
+  
+  private let moduleRootViewStack = ModuleRootViewStack()
   
   private let servicesContainer: Container = {
     let container = Container()
@@ -43,13 +75,9 @@ class ApplicationFlow {
     return container
   }()
   
-  var currentView: View?
   
   func setRootViewController(to window: UIWindow?) {
-    guard let rootModule = modulesContainer.resolve(LoginModule.self) else { return }
-    currentView = rootModule.rootView
-    window?.rootViewController = rootModule.rootView
-    
+    moduleRootViewStack.set(modulesContainer.resolve(LoginModule.self), on: window)
   }
   
   func finish<CurrentModule: Module>(module: CurrentModule, with output: ModuleOutput<CurrentModule.Output, CurrentModule.IntermediateData>) {
@@ -58,10 +86,8 @@ class ApplicationFlow {
       switch output {
       case .finished(result: _, destination: let destination) where module.destinations.contains(destination):
         switch destination {
-        case .profile where CurrentModule.Output.self is ProfileModule.Input.Type:
-          currentView = modulesContainer.resolve(ProfileModule.self)?.runned(basedOn: module.rootView, transitioned: .pushing)
-        case .registration where CurrentModule.Output.self is RegistrationModule.Input.Type:
-          currentView = modulesContainer.resolve(RegistrationModule.self)?.runned(basedOn: module.rootView, transitioned: .modally)
+        case .profile: moduleRootViewStack.push(modulesContainer.resolve(ProfileModule.self), transitioned: .pushing)
+        case .registration: moduleRootViewStack.push(modulesContainer.resolve(RegistrationModule.self), transitioned: .pushing)
         default: return
         }
       default: return
@@ -70,27 +96,22 @@ class ApplicationFlow {
       switch output {
       case .finished(result: _, destination: let destination) where module.destinations.contains(destination):
         switch destination {
-        case .profile where CurrentModule.Output.self is ProfileModule.Input.Type:
-          currentView = module.dismissed()
-          currentView = currentView.flatMap { modulesContainer.resolve(ProfileModule.self)?.runned(basedOn: $0, transitioned: .pushing) }
-        case .previous:
-          currentView = module.dismissed()
+        case .profile: moduleRootViewStack.push(modulesContainer.resolve(ProfileModule.self), transitioned: .pushing)
+        case .previous: moduleRootViewStack.pop(module: module)
         default: return
         }
-      default: currentView = module.dismissed()
+      default: return
       }
     case is ProfileModule:
       switch output {
       case .finished(_, let destination) where module.destinations.contains(destination):
         switch destination {
-        case .profile where CurrentModule.Output.self is LoginModule.Input.Type:
-          currentView = module.dismissed()
-          currentView = currentView.flatMap { modulesContainer.resolve(LoginModule.self)?.runned(basedOn: $0, transitioned: .pushing) }
+        case .login: moduleRootViewStack.replace(module, with: modulesContainer.resolve(LoginModule.self), transitioned: .pushing)
         default: return
         }
-      default: currentView = module.dismissed()
+      default: return
       }
-    default: currentView = module.dismissed()
+    default: return
     }
   }
   

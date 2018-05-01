@@ -35,6 +35,7 @@ class RegistrationViewController: UIViewController, NibDriven {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(close))
   }
   
   @IBAction func chooseAvatar() {
@@ -43,6 +44,10 @@ class RegistrationViewController: UIViewController, NibDriven {
   
   @IBAction func register(_ sender: UIButton) {
     presenter.registerUser()
+  }
+  
+  @objc func close() {
+    presenter.close()
   }
   
 }
