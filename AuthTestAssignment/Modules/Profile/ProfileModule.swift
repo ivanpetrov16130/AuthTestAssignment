@@ -14,7 +14,7 @@ class ProfileModule: Module {
   private(set) lazy var presentersContainer: Container = {
     let container = Container(parent: servicesContainer)
     container.register(ProfilePresenting.self) { resolver in
-      ProfilePresenter(owner: self, provider: resolver.resolve(AuthProvider.self)!)
+      ProfilePresenter(owner: self, userStorage: resolver.resolve(UserStorage.self)!)
     }
     return container
   }()
