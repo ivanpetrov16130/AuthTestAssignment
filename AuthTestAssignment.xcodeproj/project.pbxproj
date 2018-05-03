@@ -34,6 +34,7 @@
 		2CD34E39208E4850004465A0 /* UIKit Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD34E38208E4850004465A0 /* UIKit Extensions.swift */; };
 		2CD34E3B208E53EB004465A0 /* RegistrationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD34E3A208E53EB004465A0 /* RegistrationInputView.swift */; };
 		2CD34E3F208E5489004465A0 /* RegistrationInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD34E3E208E5489004465A0 /* RegistrationInputView.xib */; };
+		2CD40D1E209A48CC003D5D7A /* Profile views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD40D1D209A48CC003D5D7A /* Profile views.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		2CD34E38208E4850004465A0 /* UIKit Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit Extensions.swift"; sourceTree = "<group>"; };
 		2CD34E3A208E53EB004465A0 /* RegistrationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInputView.swift; sourceTree = "<group>"; };
 		2CD34E3E208E5489004465A0 /* RegistrationInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationInputView.xib; sourceTree = "<group>"; };
+		2CD40D1D209A48CC003D5D7A /* Profile views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile views.swift"; sourceTree = "<group>"; };
 		5F271A677F27A2039B461AF2 /* Pods-AuthTestAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignmentTests/Pods-AuthTestAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		823C67E25E72D38BB9DB7E53 /* Pods-AuthTestAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		87E14C98E42F75E9C21E8877 /* Pods-AuthTestAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthTestAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				2C7E6BA7208C97A6007C67C2 /* ProfileModule.swift */,
 				2C7E6BA5208C94BE007C67C2 /* ProfilePresenting.swift */,
 				2C7E6BA3208C94B0007C67C2 /* ProfileView.swift */,
+				2CD40D1D209A48CC003D5D7A /* Profile views.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AuthTestAssignment/Pods-AuthTestAssignment-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -411,6 +415,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -437,6 +442,7 @@
 				2C9AC4C52087C01E0083ACA4 /* AppDelegate.swift in Sources */,
 				2C7E6BA8208C97A6007C67C2 /* ProfileModule.swift in Sources */,
 				2C7BCEDE2095E62E00B1F0F3 /* Validation.swift in Sources */,
+				2CD40D1E209A48CC003D5D7A /* Profile views.swift in Sources */,
 				2C7E6BA6208C94BE007C67C2 /* ProfilePresenting.swift in Sources */,
 				2C7E6BB2208CAA83007C67C2 /* LoginViewController.m in Sources */,
 				2C9AC4E92087C4570083ACA4 /* User.swift in Sources */,
@@ -603,9 +609,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3D2RR86F36;
+				DEVELOPMENT_TEAM = NZDG9K46GH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -613,8 +620,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AuthTestAssignment/Modules/Login/AuthTestAssignment-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -628,9 +636,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3D2RR86F36;
+				DEVELOPMENT_TEAM = NZDG9K46GH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = AuthTestAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -638,8 +647,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ivan.petrov.AuthTestAssignment2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "AuthTestAssignment/Modules/Login/AuthTestAssignment-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -5,6 +5,8 @@ protocol RegistrationView: class {
   var registrationData: RegistrationData { get }
   
   func show(_ errorsForInvalidFields: [RegistrationData.Fields: String]?)
+  
+  func show(error: Error)
 }
 
 class RegistrationViewController: UIViewController, NibDriven {  
@@ -54,6 +56,11 @@ class RegistrationViewController: UIViewController, NibDriven {
 
 
 extension RegistrationViewController: RegistrationView {
+  
+  func show(error: Error) {
+    
+  }
+  
   
   var registrationData: RegistrationData {
     return RegistrationData(nickname: nicknameInputView.inputText, name: nameInputView.inputText, surname: surnameInputView.inputText, patronymic: patronymicInputView.inputText, password: passwordInputView.inputText, avatarData: (avatarImageView.image).flatMap{ UIImageJPEGRepresentation($0, 1)})

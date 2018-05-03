@@ -3,21 +3,30 @@ import UIKit
 protocol ProfileView: class {
   func renderAvatar(with data: Data?)
   func greetUser(with fullName: String)
+  func updateAvatarLoadingProgress(_ progress: Progress)
 }
 
 class ProfileViewController: UIViewController {
   
-  private let avatarImageView: UIImageView = {
-    let imageView = UIImageView(frame: .zero)
-    imageView.contentMode = .scaleAspectFit
-    imageView.isHidden = true
-    imageView.translatesAutoresizingMaskIntoConstraints = false
-    return imageView
+  private let avatarView: AvatarView = {
+    let avatarView = AvatarView(frame: .zero)
+    avatarView.isHidden = true
+    avatarView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+    avatarView.alpha = 0.3
+    return avatarView
   }()
   
   private let fullnameLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
+    label.textAlignment = .center
+    label.font = UIFont.boldSystemFont(ofSize: 21)
+    label.numberOfLines = 0
+    label.textColor = UIColor.Scheme.accent
+    label.shadowColor = UIColor.Scheme.tone
+    label.shadowOffset = CGSize(width: 2, height: -3)
+    label.transform = CGAffineTransform(scaleX: 0.5, y: 0.2)
+    label.alpha = 0.3
     return label
   }()
   
@@ -35,9 +44,9 @@ class ProfileViewController: UIViewController {
   override func loadView() {
     super.loadView()
     
-    view.backgroundColor = .yellow
+    view.backgroundColor = UIColor.Scheme.background
     
-    [avatarImageView, fullnameLabel].forEach(view.addSubview)
+    [avatarView, fullnameLabel].forEach(view.addSubview)
     
     let mostTopAnchor: NSLayoutYAxisAnchor
     if #available(iOS 11.0, *) {
@@ -53,13 +62,13 @@ class ProfileViewController: UIViewController {
       mostBottomAnchor = view.bottomAnchor
     }
     
-    [avatarImageView.topAnchor.constraint(equalTo: mostTopAnchor),
-     avatarImageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
-     avatarImageView.heightAnchor.constraint(equalTo: avatarImageView.widthAnchor),
-     avatarImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)]
+    [avatarView.topAnchor.constraint(equalTo: mostTopAnchor, constant: 36),
+     avatarView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
+     avatarView.heightAnchor.constraint(equalTo: avatarView.widthAnchor),
+     avatarView.centerXAnchor.constraint(equalTo: view.centerXAnchor)]
       .forEach{ $0.isActive = true }
     
-    [fullnameLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 24),
+    [fullnameLabel.topAnchor.constraint(equalTo: avatarView.bottomAnchor, constant: 48),
      fullnameLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
      fullnameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
      fullnameLabel.bottomAnchor.constraint(lessThanOrEqualTo: mostBottomAnchor, constant: 24)]
@@ -69,18 +78,39 @@ class ProfileViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    if #available(iOS 11.0, *) {
+      self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    UIView.animate(withDuration: 0.3) {
+      self.avatarView.placeholderImage = #imageLiteral(resourceName: "profilePlaceholder")
+      self.avatarView.isHidden = false
+      self.avatarView.transform = .identity
+      self.avatarView.alpha = 1
+      
+      self.fullnameLabel.isHidden = false
+      self.fullnameLabel.transform = .identity
+      self.fullnameLabel.alpha = 1
+    }
   }
   
 }
 
 extension ProfileViewController: ProfileView {
+  
+  func updateAvatarLoadingProgress(_ progress: Progress) {
+    avatarView.loadingProgress = progress.fractionCompleted
+  }
+  
   func greetUser(with fullName: String) {
-    fullnameLabel.text = fullName
-    
+    fullnameLabel.text = "Добро пожаловать, \(fullName)" 
   }
   
   func renderAvatar(with data: Data?) {
-    data.flatMap(UIImage.init(data: )).flatMap{ avatarImageView.image = $0 }
+    data.flatMap(UIImage.init(data: )).flatMap{ avatarView.image = $0 }
     
   }
   

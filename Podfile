@@ -8,6 +8,7 @@ target 'AuthTestAssignment' do
   pod 'Swinject'
   pod 'Moya'
   pod 'IQKeyboardManager'
+  pod 'AlamofireImage'
 
   target 'AuthTestAssignmentTests' do
     inherit! :search_paths

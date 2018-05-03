@@ -37,7 +37,7 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Логин"/>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isTextFieldSecurityEnabled" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isTextFieldSecurityEnabled" value="NO"/>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="70.5" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="AZY-n2-Qc7" customClass="RegistrationInputView" customModule="AuthTestAssignment" customModuleProvider="target">

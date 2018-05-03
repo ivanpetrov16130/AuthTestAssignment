@@ -57,7 +57,7 @@ class ApplicationFlow {
     }
     container.register(UserStorage.self) { _ in
       InMemoryUserStorage()
-    }
+    }.inObjectScope(.container)
     return container
   }()
   
