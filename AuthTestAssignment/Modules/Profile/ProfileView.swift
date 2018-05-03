@@ -78,6 +78,7 @@ class ProfileViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationItem.title = "Профиль"
     if #available(iOS 11.0, *) {
       self.navigationController?.navigationBar.prefersLargeTitles = true
     }

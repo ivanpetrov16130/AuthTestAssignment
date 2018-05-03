@@ -8,29 +8,35 @@
     _presenter = presenter;
     
     _usernameTextField = [UITextField new];
-    _usernameTextField.placeholder = @"Your login";
+    _usernameTextField.placeholder = @"Ваш логин";
     _usernameTextField.textAlignment = NSTextAlignmentCenter;
-    _usernameTextField.backgroundColor = UIColor.lightGrayColor;
     _usernameTextField.layer.cornerRadius = 4;
+    _usernameTextField.textColor = [UIColor colorWithRed:56 / 255.0 green:25 / 255.0 blue:49 / 255.0 alpha:1];
+    _usernameTextField.backgroundColor = UIColor.whiteColor;
+    _usernameTextField.layer.borderColor = [UIColor colorWithRed:234 / 255.0 green:46 / 255.0 blue:111 / 255.0 alpha:1].CGColor;
+    _usernameTextField.layer.borderWidth = 2;
     _usernameTextField.clipsToBounds = YES;
     
     _passwordTextField = [UITextField new];
-    _passwordTextField.placeholder = @"Your password";
+    _passwordTextField.placeholder = @"Ваш пароль";
     _passwordTextField.textAlignment = NSTextAlignmentCenter;
     _passwordTextField.secureTextEntry = YES;
     _passwordTextField.autocorrectionType = UITextAutocorrectionTypeNo;
-    _passwordTextField.backgroundColor = UIColor.lightGrayColor;
     _passwordTextField.layer.cornerRadius = 4;
+    _passwordTextField.textColor = [UIColor colorWithRed:56 / 255.0 green:25 / 255.0 blue:49 / 255.0 alpha:1];
+    _passwordTextField.backgroundColor = UIColor.whiteColor;
+    _passwordTextField.layer.borderColor = [UIColor colorWithRed:234 / 255.0 green:46 / 255.0 blue:111 / 255.0 alpha:1].CGColor;
+    _passwordTextField.layer.borderWidth = 2;
     _passwordTextField.clipsToBounds = YES;
     
     _loginButton = [UIButton new];
-    [_loginButton setTitle:@"Log in" forState:UIControlStateNormal];
-    [_loginButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    [_loginButton setTitle:@"Вход" forState:UIControlStateNormal];
+    [_loginButton setTitleColor:[UIColor colorWithRed:234 / 255.0 green:46 / 255.0 blue:111 / 255.0 alpha:1] forState:UIControlStateNormal];
     [_loginButton addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
     
     _registerButton = [UIButton new];
-    [_registerButton setTitle:@"Register" forState:UIControlStateNormal];
-    [_registerButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    [_registerButton setTitle:@"Регистрация" forState:UIControlStateNormal];
+    [_registerButton setTitleColor:[UIColor colorWithRed:86 / 255.0 green:30 / 255.0 blue:63 / 255.0 alpha:1] forState:UIControlStateNormal];
     [_registerButton addTarget:presenter action:@selector(transitToRegistration) forControlEvents:UIControlEventTouchUpInside];
 
   }
@@ -40,7 +46,7 @@
 - (void)loadView {
   [super loadView];
   
-  self.view.backgroundColor = UIColor.whiteColor;
+  self.view.backgroundColor = [UIColor colorWithRed:21 / 255.0 green:22 / 255.0 blue:33 / 255.0 alpha:1];
   
   NSArray<UIView *> * subviews = @[_usernameTextField, _passwordTextField, _loginButton, _registerButton];
   [subviews enumerateObjectsUsingBlock:^(UIView * _Nonnull subview, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -110,7 +116,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.navigationItem.title = @"Login";
+  self.navigationItem.title = @"Вход";
   if (@available(iOS 11.0, *)) {
     self.navigationController.navigationBar.prefersLargeTitles = YES;
   }

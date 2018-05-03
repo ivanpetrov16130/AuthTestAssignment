@@ -30,7 +30,7 @@
                     <rect key="frame" x="0.0" y="28" width="375" height="729"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuL-QL-7Ah">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
                             <subviews>
                                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="71" placeholderIntrinsicHeight="90" translatesAutoresizingMaskIntoConstraints="NO" id="iLJ-Gz-KkS" customClass="RegistrationInputView" customModule="AuthTestAssignment" customModuleProvider="target">
                                     <rect key="frame" x="8" y="8" width="359" height="90"/>
@@ -73,7 +73,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-bv-sSq">
-                                    <rect key="frame" x="8" y="612" width="359" height="30"/>
+                                    <rect key="frame" x="8" y="612" width="359" height="35"/>
                                     <subviews>
                                         <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oq3-yw-7Sg">
                                             <rect key="frame" x="129.5" y="-640" width="100" height="100"/>
@@ -83,8 +83,12 @@
                                             </constraints>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnI-bp-0sh" userLabel="Choose Avatar Button">
-                                            <rect key="frame" x="117" y="0.0" width="125" height="30"/>
-                                            <state key="normal" title="Загрузить аватар"/>
+                                            <rect key="frame" x="102" y="0.0" width="155" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <state key="normal" title="Загрузить аватар">
+                                                <color key="titleColor" red="0.91764705882352937" green="0.18256864552082636" blue="0.44647375217400948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="titleShadowColor" red="0.33586689434657113" green="0.11652997412811729" blue="0.24753864790893684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
                                             <connections>
                                                 <action selector="chooseAvatar" destination="-1" eventType="touchUpInside" id="fgp-22-GQq"/>
                                             </connections>
@@ -94,18 +98,27 @@
                                         <constraint firstItem="oq3-yw-7Sg" firstAttribute="centerX" secondItem="mVd-bv-sSq" secondAttribute="centerX" id="0Hq-bW-4i8"/>
                                     </constraints>
                                 </stackView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efx-Jv-OMe">
-                                    <rect key="frame" x="113" y="666" width="149" height="30"/>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efx-Jv-OMe">
+                                    <rect key="frame" x="62.5" y="671" width="250" height="39"/>
+                                    <color key="backgroundColor" red="0.33725490196078434" green="0.11701154731706932" blue="0.24856162913719421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="149" id="ag8-U5-c4n"/>
+                                        <constraint firstAttribute="width" constant="250" id="ag8-U5-c4n"/>
                                     </constraints>
-                                    <state key="normal" title="Зарегистрироваться"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <state key="normal" title="Зарегистрироваться">
+                                        <color key="titleColor" red="0.91764705882352937" green="0.18256864552082636" blue="0.44647375217400948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="register:" destination="-1" eventType="touchUpInside" id="fqW-qa-c7L"/>
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.08294918091445265" green="0.087353393776125512" blue="0.13222743729471487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="efx-Jv-OMe" firstAttribute="top" secondItem="mVd-bv-sSq" secondAttribute="bottom" constant="24" id="1vd-JJ-wot"/>
                                 <constraint firstItem="AZY-n2-Qc7" firstAttribute="top" secondItem="iLJ-Gz-KkS" secondAttribute="bottom" constant="8" id="2fm-SB-feh"/>
@@ -131,6 +144,7 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" red="0.08118284754412218" green="0.085493276379697974" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="JuL-QL-7Ah" firstAttribute="leading" secondItem="AUB-zf-P9f" secondAttribute="leading" id="5sA-xH-wBJ"/>
                         <constraint firstAttribute="trailing" secondItem="JuL-QL-7Ah" secondAttribute="trailing" id="hdy-LS-AKJ"/>
@@ -139,7 +153,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.25787622560000001" blue="0.71656504560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.081576961476985982" green="0.089753149683464789" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="JuL-QL-7Ah" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="HxL-0j-LXs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AUB-zf-P9f" secondAttribute="trailing" id="UPQ-yD-cYd"/>

@@ -37,7 +37,8 @@ class RegistrationViewController: UIViewController, NibDriven {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(close))
+    navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Отмена", style: .plain, target: self, action: #selector(close))
+    navigationItem.title = "Регистрация"
   }
   
   @IBAction func chooseAvatar() {
