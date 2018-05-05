@@ -28,6 +28,7 @@ extension AppDelegate {
   func activateThirdparties() {
     IQKeyboardManager.shared().isEnabled = true
     IQKeyboardManager.shared().toolbarTintColor = UIColor.Scheme.accent
+    IQKeyboardManager.shared().placeholderColor = UIColor.Scheme.tone
   }
   
   func applyCommonViewStyling() {
@@ -40,6 +41,7 @@ extension AppDelegate {
       navigationBarAppearence.largeTitleTextAttributes = [.foregroundColor: UIColor.Scheme.accent]
     }
     UIBarButtonItem.appearance().setTitleTextAttributes([.foregroundColor: UIColor.Scheme.accent], for: .normal)
+    UITextField.appearance().keyboardAppearance = .dark
   }
   
 }

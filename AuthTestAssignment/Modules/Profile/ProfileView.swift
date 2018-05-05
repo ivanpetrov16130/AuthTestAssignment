@@ -1,6 +1,6 @@
 import UIKit
 
-protocol ProfileView: class {
+protocol ProfileView: class, ErrorShowing {
   func renderAvatar(with data: Data?)
   func greetUser(with fullName: String)
   func updateAvatarLoadingProgress(_ progress: Progress)
@@ -112,7 +112,6 @@ extension ProfileViewController: ProfileView {
   
   func renderAvatar(with data: Data?) {
     data.flatMap(UIImage.init(data: )).flatMap{ avatarView.image = $0 }
-    
   }
   
   

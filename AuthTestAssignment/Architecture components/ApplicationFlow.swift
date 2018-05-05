@@ -14,35 +14,6 @@ enum Destination {
   case previous
 }
 
-class ModuleRootViewStack: NSObject, UINavigationControllerDelegate {
-  private var moduleRootViews: [UIViewController] = []
-  
-  func push<NewModule: Module>(_ module: NewModule?, transitioned: TransitionType) {
-    guard let module = module, let previousModuleRootView = moduleRootViews.last else { return }
-    moduleRootViews.append(module.rootView)
-    module.run(basedOn: previousModuleRootView, transitioned: transitioned)
-  }
-  
-  func set<RootModule: Module>(_ module: RootModule?, on window: UIWindow?) {
-    guard let module = module, moduleRootViews.isEmpty else { return }
-    let n = UINavigationController(rootViewController: module.rootView)
-    moduleRootViews.append(module.rootView)
-    n.delegate = self
-    window?.rootViewController = n
-  }
-  
-  func pop<CurrentModule: Module>(module: CurrentModule?) {
-    guard let module = module else { return }
-    _ = moduleRootViews.popLast()
-    module.dismiss()
-  }
-  
-  func replace<CurrentModule: Module, NewModule: Module>(_ currentModule: CurrentModule?, with module: NewModule?, transitioned: TransitionType) {
-    self.pop(module: currentModule)
-    self.push(module, transitioned: transitioned)
-  }
-  
-}
 
 class ApplicationFlow {
   

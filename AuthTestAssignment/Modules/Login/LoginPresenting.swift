@@ -18,8 +18,10 @@ class LoginPresenter: BasicPresenter<LoginModule>, LoginPresenting {
     self.view = view
   }
 
-  func login(with username: String, and password: String) {
-    let credentials = Credentials(username: username, password: password)
+  func login() {
+    guard let username = view?.username(), let password = view?.password() else { return }
+    
+    let credentials = Credentials(nickname: username, password: password)
     provider.request(.login(credentials: credentials)) { (result) in
       switch result {
       case .success(let response):
@@ -27,7 +29,7 @@ class LoginPresenter: BasicPresenter<LoginModule>, LoginPresenting {
           self.userStorage.keep(user, for: credentials)
           self.owner.finish(output: .finished(result: (), destination: .profile))
         } else {
-          
+          self.view?.show(result.error)
         }
       case .failure(let error):
         self.view?.show(error)

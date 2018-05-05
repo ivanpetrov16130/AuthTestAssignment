@@ -21,6 +21,7 @@
 		2C7E6BAA208C988B007C67C2 /* RegistrationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BA9208C988B007C67C2 /* RegistrationModule.swift */; };
 		2C7E6BAC208C98A9007C67C2 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BAB208C98A9007C67C2 /* LoginModule.swift */; };
 		2C7E6BB2208CAA83007C67C2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7E6BB1208CAA83007C67C2 /* LoginViewController.m */; };
+		2C80FD09209B918800B89DB7 /* Reponsibilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C80FD08209B918800B89DB7 /* Reponsibilities.swift */; };
 		2C9AC4C52087C01E0083ACA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */; };
 		2C9AC4CC2087C01F0083ACA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */; };
 		2C9AC4CF2087C0200083ACA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */; };
@@ -66,6 +67,7 @@
 		2C7E6BAF208CAA82007C67C2 /* AuthTestAssignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AuthTestAssignment-Bridging-Header.h"; sourceTree = "<group>"; };
 		2C7E6BB0208CAA83007C67C2 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		2C7E6BB1208CAA83007C67C2 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2C80FD08209B918800B89DB7 /* Reponsibilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reponsibilities.swift; sourceTree = "<group>"; };
 		2C9AC4C12087C01E0083ACA4 /* AuthTestAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthTestAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		2C1E38D220950EC8009D6267 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2C80FD08209B918800B89DB7 /* Reponsibilities.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -223,10 +226,10 @@
 				2C7E6B9B208C9465007C67C2 /* Modules */,
 				2C7E6B9A208C9456007C67C2 /* Architecture components */,
 				2C9AC4C42087C01E0083ACA4 /* AppDelegate.swift */,
+				2CD34E38208E4850004465A0 /* UIKit Extensions.swift */,
 				2C9AC4CB2087C01F0083ACA4 /* Assets.xcassets */,
 				2C9AC4CD2087C0200083ACA4 /* LaunchScreen.storyboard */,
 				2C9AC4D02087C0200083ACA4 /* Info.plist */,
-				2CD34E38208E4850004465A0 /* UIKit Extensions.swift */,
 			);
 			path = AuthTestAssignment;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				2C9AC4E92087C4570083ACA4 /* User.swift in Sources */,
 				2CD34E39208E4850004465A0 /* UIKit Extensions.swift in Sources */,
 				2C7E6B97208C78B5007C67C2 /* LoginPresenting.swift in Sources */,
+				2C80FD09209B918800B89DB7 /* Reponsibilities.swift in Sources */,
 				2C7E6BAC208C98A9007C67C2 /* LoginModule.swift in Sources */,
 				2C7BCEE02095E71300B1F0F3 /* Registration.swift in Sources */,
 				2C9AC4E72087C3510083ACA4 /* Networking.swift in Sources */,

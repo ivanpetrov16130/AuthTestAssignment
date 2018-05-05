@@ -38,7 +38,7 @@
                     </constraints>
                     <color key="textColor" red="0.2196078431372549" green="0.10057619609520263" blue="0.19501382606476056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                    <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39o-Tn-8kW">
                     <rect key="frame" x="16" y="74" width="343" height="38"/>

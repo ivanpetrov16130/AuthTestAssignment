@@ -32,7 +32,7 @@
     _loginButton = [UIButton new];
     [_loginButton setTitle:@"Вход" forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor colorWithRed:234 / 255.0 green:46 / 255.0 blue:111 / 255.0 alpha:1] forState:UIControlStateNormal];
-    [_loginButton addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
+    [_loginButton addTarget:presenter action:@selector(login) forControlEvents:UIControlEventTouchUpInside];
     
     _registerButton = [UIButton new];
     [_registerButton setTitle:@"Регистрация" forState:UIControlStateNormal];
@@ -122,21 +122,25 @@
   }
 }
 
-- (void)hideValidtionErrors { 
-  
-}
-
-- (void)showValidationErrors { 
-  
-}
-
 - (void)show:(NSError *)error {
-  
+  UIAlertController * alertViewController = [UIAlertController alertControllerWithTitle:@"Ошибка" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+  [alertViewController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+  [self presentViewController:alertViewController animated:YES completion:nil];
 }
 
-- (void)login {
-  [_presenter loginWith:_usernameTextField.text And:_passwordTextField.text];
+- (void)showErrorsForInvalidFields:(NSDictionary<NSString *, NSString *> * _Nullable)errorsForInvalidFields {
+
 }
+
+- (NSString * _Nonnull)password {
+  return self.passwordTextField.text;
+}
+
+
+- (NSString * _Nonnull)username {
+  return self.usernameTextField.text;
+}
+
 
 
 @end

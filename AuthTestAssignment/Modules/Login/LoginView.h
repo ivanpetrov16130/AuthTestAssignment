@@ -1,18 +1,12 @@
-//
-//  LoginView.h
-//  AuthTestAssignment
-//
-//  Created by Ivan on 22.04.2018.
-//  Copyright © 2018 Ivan Petrov. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 @protocol LoginView <NSObject>
 
-- (void)showValidationErrors;
+- (NSString * _Nonnull )username;
 
-- (void)hideValidtionErrors;
+- (NSString * _Nonnull )password;
+
+- (void)showErrorsForInvalidFields:(NSDictionary<NSString *, NSString *> * _Nullable)errorsForInvalidFields;
 
 - (void)show:(NSError *)error;
 

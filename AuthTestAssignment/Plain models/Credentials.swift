@@ -1,6 +1,6 @@
 import Foundation
 
-struct Credentials {
-  let username: String
+struct Credentials: Encodable {
+  let nickname: String
   let password: String
 }

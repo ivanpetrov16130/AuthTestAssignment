@@ -33,17 +33,15 @@ class RegistrationPresenter: BasicPresenter<RegistrationModule>, RegistrationPre
       provider.request(.register(user: user)) { (result) in
         switch result {
         case .success(let response):
-          if 200 == response.statusCode {
-            self.userStorage.keep(user, for: Credentials(username: user.nickname, password: user.password))
+          if 201 == response.statusCode {
+            self.userStorage.keep(user, for: Credentials(nickname: user.nickname, password: user.password))
             self.owner.finish(output: .finished(result: (), destination: .profile))
           } else {
-            
+            self.view?.show(error: result.error!)
           }
         case .failure(let error): self.view?.show(error: error)
         }
       }
-      self.userStorage.keep(user, for: Credentials(username: user.nickname, password: user.password))
-      owner.finish(output: .finished(result: (), destination: .profile))
     case .failure(errorsForInvalidFields: let errorsForInvalidFields): view?.show(errorsForInvalidFields)
     }
   }

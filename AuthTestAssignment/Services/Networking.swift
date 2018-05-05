@@ -12,7 +12,7 @@ enum AuthApi {
 
 extension AuthApi: TargetType {
   
-  var baseURL: URL { return URL(string: "https://")! }
+  var baseURL: URL { return URL(string: "http://0.0.0.0:8080/")! }
   
   var path: String {
     switch self {
@@ -22,10 +22,7 @@ extension AuthApi: TargetType {
   }
   
   var method: Moya.Method {
-    switch self {
-    case .login: return .get
-    case .register: return .post
-    }
+    return .post
   }
   
   var sampleData: Data { return Data() }
@@ -33,7 +30,7 @@ extension AuthApi: TargetType {
   var task: Task {
     switch self {
     case .login(credentials: let credentials):
-      return Task.requestParameters(parameters: ["login": credentials.username, "password": credentials.password], encoding: URLEncoding.queryString)
+      return Task.requestJSONEncodable(credentials)
     case .register(user: let user):
       return Task.requestJSONEncodable(user)
     }

@@ -1,15 +1,14 @@
 import UIKit
 
 
-protocol RegistrationView: class {
+protocol RegistrationView: class, ErrorShowing {
   var registrationData: RegistrationData { get }
   
   func show(_ errorsForInvalidFields: [RegistrationData.Fields: String]?)
   
-  func show(error: Error)
 }
 
-class RegistrationViewController: UIViewController, NibDriven {  
+class RegistrationViewController: UIViewController, NibDriven {
   @IBOutlet weak var nicknameInputView: RegistrationInputView!
   @IBOutlet weak var surnameInputView: RegistrationInputView!
   @IBOutlet weak var nameInputView: RegistrationInputView!
@@ -58,9 +57,9 @@ class RegistrationViewController: UIViewController, NibDriven {
 
 extension RegistrationViewController: RegistrationView {
   
-  func show(error: Error) {
-    
-  }
+//  func show(error: Error) {
+//
+//  }
   
   
   var registrationData: RegistrationData {
